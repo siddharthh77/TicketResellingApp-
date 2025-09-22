@@ -46,3 +46,4 @@ TicketResellingApp/                 # Root folder (repo)
 
 
 Amith: 
+<img width="880" height="119" alt="Image" src="https://github.com/user-attachments/assets/23ff0c31-fe5c-4f55-a394-17790492c8e6" />
