@@ -20,8 +20,8 @@ public class AddTicketServlet extends HttpServlet {
 
     // JDBC connection info
     private static final String DB_URL = "jdbc:sqlserver://localhost:1433;databaseName=ticket_resell";
-    private static final String DB_USER = "your_db_username";
-    private static final String DB_PASSWORD = "your_db_password";
+    private static final String DB_USER = "sa";
+    private static final String DB_PASSWORD = "pass";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
