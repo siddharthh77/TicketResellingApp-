@@ -9,12 +9,6 @@ GO
 USE ticket_resell;
 GO
 
--- Drop tables if they exist (so we can reset easily during development)
-IF OBJECT_ID('Transactions', 'U') IS NOT NULL DROP TABLE Transactions;
-IF OBJECT_ID('Tickets', 'U') IS NOT NULL DROP TABLE Tickets;
-IF OBJECT_ID('Users', 'U') IS NOT NULL DROP TABLE Users;
-GO
-
 -- Create Users table
 CREATE TABLE Users (
     id INT IDENTITY(1,1) PRIMARY KEY,
