@@ -54,12 +54,12 @@ GO
 
 -- Optional sample data for testing
 INSERT INTO Users (name, email, password) VALUES
-('Alice', 'alice@example.com', 'password1'),
-('Bob', 'bob@example.com', 'password2');
+('A', 'a@example.com', 'password1'),
+('B', 'b@example.com', 'password2');
 GO
 
 INSERT INTO Tickets (seller_id, event_name, event_date, price)
 VALUES
 (1, 'College Fest', '2025-10-01', 200.00),
-(1, 'Rock Concert', '2025-10-20', 500.00);
+(1, 'Concert', '2025-10-20', 500.00);
 GO
