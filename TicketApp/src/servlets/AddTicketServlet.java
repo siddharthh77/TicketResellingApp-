@@ -86,7 +86,7 @@ public class AddTicketServlet extends HttpServlet {
 
                     int rowsInserted = ps.executeUpdate();
                     if (rowsInserted > 0) {
-                        response.sendRedirect(request.getContextPath() + "/ticketsList.jsp");
+                        response.sendRedirect(request.getContextPath() + "/viewTickets.jsp");
                     } else {
                         request.setAttribute("errorMessage", "Failed to post ticket. Try again.");
                         request.getRequestDispatcher("/postTicket.jsp").forward(request, response);
