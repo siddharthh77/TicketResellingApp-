@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head><title>Register</title></head>
