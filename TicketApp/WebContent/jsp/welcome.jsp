@@ -7,7 +7,7 @@
 <p>Your email: <%= session.getAttribute("userEmail") %></p>
 <p>
     <a href="../ViewMyTicketsServlet">My Tickets</a> |
-    <a href="postTicket.jsp">Post a Ticket</a>
+    <a href="postTicket.jsp">Post Ticket</a>
 </p>
 <a href="login.jsp">Logout</a>
 </body>
