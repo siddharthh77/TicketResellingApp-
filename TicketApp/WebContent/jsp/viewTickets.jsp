@@ -1,11 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page session="true" %>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Browse Tickets</title>
+    <title>Available Tickets</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
     <h2>Available Tickets</h2>
+
     <table>
         <tr>
             <th>Event</th>
@@ -25,7 +28,7 @@
             <td>
                 <form action="${pageContext.request.contextPath}/PurchaseServlet" method="post">
                     <input type="hidden" name="ticketId" value="<%= t[0] %>">
-                    <button type="submit">Buy</button>
+                    <input type="submit" value="Buy">
                 </form>
             </td>
         </tr>
@@ -40,5 +43,11 @@
             }
         %>
     </table>
+
+    <div class="nav-links">
+        <a href="${pageContext.request.contextPath}/jsp/addTicket.jsp">Post Ticket</a> |
+        <a href="${pageContext.request.contextPath}/jsp/login.jsp">Logout</a>
+    </div>
 </body>
 </html>
+
