@@ -5,6 +5,10 @@
 <body>
 <h2>Welcome, <%= session.getAttribute("userName") %>!</h2>
 <p>Your email: <%= session.getAttribute("userEmail") %></p>
+<p>
+    <a href="../ViewMyTicketsServlet">My Tickets</a> |
+    <a href="postTicket.jsp">Post a Ticket</a>
+</p>
 <a href="login.jsp">Logout</a>
 </body>
 </html>
